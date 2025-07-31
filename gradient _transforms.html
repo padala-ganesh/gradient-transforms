@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient And Transforms</title>
+    <style>      
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: lightgray;
+    }
+    .parent {
+      width: 300px;
+      height: 200px;
+      border-radius: 25px;
+      background-color: sandybrown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      transition: transform 1s ease;
+    }
+    .parent:hover {
+      transform: scale(2.5) rotate(5deg) translate(10px, 10px);
+      color:black;
+      background-image: linear-gradient( to right bottom, lightgreen,lightseagreen,lightsalmon);
+      border-top-right-radius: 25%;
+      border-bottom-left-radius: 25%;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Hover here!
+    </div>
+</body>
+</html>
